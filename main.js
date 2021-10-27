@@ -45,12 +45,12 @@ Array(400).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load("spaceDark.jpg");
+const spaceTexture = new THREE.TextureLoader().load("/spaceDark.jpg");
 scene.background = spaceTexture; ////
 
 // Avatar
 
-const portalCubeTexture = new THREE.TextureLoader().load("portalCube.png");
+const portalCubeTexture = new THREE.TextureLoader().load("/portalCube.png");
 
 const portalcube = new THREE.Mesh(
   new THREE.BoxGeometry(1, 1, 1),
@@ -61,8 +61,8 @@ scene.add(portalcube);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load("/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("/normal.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(1, 20, 20),
