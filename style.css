@@ -1,13 +1,22 @@
 @import url("https://use.typekit.net/jmk3xov.css");
+body {
+  font-family: Courier, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
+/* .links {
+  text-decoration: underline;
+} */
 .links:hover {
   color: blue;
 }
 img {
   width: 20%;
+  height: 50%;
   border-radius: 50%;
   padding: 10px;
   vertical-align: middle;
@@ -52,4 +61,17 @@ canvas {
 .flexbox-item-3 {
   min-height: 150px;
   flex-grow: 1;
+}
+
+.flex-containerList {
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-containerList > div {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
